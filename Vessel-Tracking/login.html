@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+
+    <title>Vessel Tracking</title>
+    <!-- Font Awesome -->
+    <link href="css/popup.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./css/github.css">
+    <script src="./js/highlight.pack.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAs0yjICEX_KiaE65lPBTHs69v1lEtjzp8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+
+</head>
+
+<body>
+    <!--Card image-->
+<!--   
+    <div>
+        <input type="radio" id="Operator" name="user" value="Operator">
+        <label for="Operator">Operator</label><br>
+    </div> -->
+    <section style="width: 100%;height: 100%">
+
+        <div class="card"
+            style="position:absolute; width: 25rem; top: 12%;left: 37%;margin-right:1%;border-radius: 0.5rem;height:75%;">
+            <div class="card-body">
+                <!-- <div>
+                    <input type="radio" id="Admin" name="user" value="Admin">
+                    <label for="Admin">Admin</label><br>
+                </div>
+                 -->
+ <div class="md-form"
+                    style="display: inline-flex;width: 100%;margin-top: 30%;margin-left: 13%!important">
+                    <!-- <img src="./img/anchor_lg.png" class="text-center" style="position:absolute;opacity:0.04;top:0%;right:5%;bottom:50%" height="150%" /> -->
+                    <form action="login.php" method="post" >
+                       
+                        UserName: <input type="text" name="UserName"><br>
+                        E-mail: <input type="text" name="Email"><br>
+                        Password: <input type="password" name="Password"><br>
+                        <button class="btn btn-rounded waves-effect waves-light search"
+                            style="position:relative;float:left !important;margin-top:5%;margin-left:29%;margin-bottom: 3.2px !important;">SUBMIT</button>
+                    </form>
+              
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+
+<script>
+const dbParam = JSON.stringify({"limit":17});
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  myObj = JSON.parse(this.responseText);
+  let text = "";
+  for (let x in myObj) {
+    text +="{ \"MMSI\": " + myObj[x].mmsi + ",<br>\"STATUS\": " + myObj[x].status + ",<br>\"SPEED\": " + myObj[x].speed+",<br>\"LON\": " + myObj[x].lon+",<br>\"LAT\": " + myObj[x].lat+",<br>\"COURSE\": " + myObj[x].course+",<br>\"SPEED\": " + myObj[x].speed+",<br>\"HEADING\": " + myObj[x].heading+",<br>\"TIMESTAMP\": " + myObj[x].timestamp+",<br>\"SHIP_ID\": " + myObj[x].shipID+"<br>},<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+xmlhttp.open("POST", "fetch.php");
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam);
+</script>
+
+
+</body>
+</html>
